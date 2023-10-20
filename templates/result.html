@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classification Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body>
+    <div id="warning-message" class="content-wrapper row-content row-center">
+
+    </div>
+
+    <div id="results-container" class="content-wrapper column-content column-center flex-gap-40">
+        <h2>Report on your CV</h2>
+
+        <div id="results-wrapper" class="content-wrapper column-content column-center flex-gap-10">
+            {% if result is defined %}
+                <div>{{ result }}</div>
+            {% else %}
+                <div>No result available.</div>
+            {% endif %}
+        </div>
+
+        <a href="/">
+            <button>Go Back</button>
+        </a>
+    </div>
+</body>
+</html>

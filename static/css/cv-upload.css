@@ -1,0 +1,48 @@
+/* --------------------- */
+/* Animation Definitions */
+/* --------------------- */
+
+@keyframes settleDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+form {
+    padding: 40px;
+    /* border: 1px solid grey; */
+    background-color: #f4f4f4;
+    border-radius: 3px;
+}
+
+#form-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#form-container {
+    width: 60%;
+    height: 80%;
+    /* padding-top: 6vh; */
+    margin-top: 6vh;
+    padding: 40px;
+    border-radius: 5px;
+    /* border: 1px solid grey; */
+    box-shadow: 0px 0px 20px 4px #e1e1e1;
+    animation: settleDown 1.5s ease-in-out 0s forwards;
+}
+
+#image-upload-container {
+    height: fit-content;
+}
+
+#submit-btn-wrapper {
+    padding-top: 5vh;
+    height: fit-content;
+}

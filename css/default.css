@@ -1,0 +1,123 @@
+
+
+
+/* -------------------- */
+/*  General styles
+/* -------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+img {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #FF9800;
+    font-weight: bold;
+    font-size: 16px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FF9800;
+    border: 1px solid #FF9800;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+button:hover {
+    background-color: white;
+    color: #FF9800;
+    border: 1px solid #FF9800;
+}
+
+/* content wrapper styles */
+.content-wrapper {
+    display: flex;
+    width: 100%;
+}
+.column-content {
+    flex-direction: column;
+}
+.row-content {
+    flex-direction: row;
+}
+.row-left {
+    justify-content: flex-start;
+}
+.row-right {
+    justify-content: flex-end;
+}
+.row-center {
+    justify-content: center;
+}
+.column-left {
+    align-items: flex-start;
+}
+.column-right {
+    align-items: flex-end;
+}
+.column-center {
+    align-items: center;
+}
+.flex-gap-5 {
+    gap: 5px;
+}
+.flex-gap-10 {
+    gap: 10px;
+}
+.flex-gap-20 {
+    gap: 20px;
+}
+.flex-gap-30 {
+    gap: 30px;
+}
+.flex-gap-40 {
+    gap: 40px;
+}
+
+
+.upload-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upload-label {
+    font-weight: bold;
+    color: #333;
+}
+.file-input {
+    margin-top: 10px;
+}
+
+/* warning message */
+/* warning message should be displayed on every page */
+/* warning message */
+#warning-message {
+    background-color: #d85353;
+    color: white;
+    padding: 5px;
+}

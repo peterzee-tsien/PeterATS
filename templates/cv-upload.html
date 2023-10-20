@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>DermaPredict</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/image-upload.css') }}">
+    </head>
+
+    <body>
+
+        <div id="warning-message" class="content-wrapper row-content row-center">
+            PLEASE UPLOAD YOUR CV BELOW
+        </div>
+
+
+        <div id="form-container" class="content-wrapper column-content column-center flex-gap-40">
+
+            <div id="image-upload-container" class="content-wrapper column-content column-center flex-gap-5">
+                <div text-align="center"></div>
+
+            </div>
+
+            <div id="form-wrapper" class="content-wrapper column-content column-left flex-gap-20" style="display: flex; align-items: center; text-align: center; ">
+                <form class="content-wrapper column-content column-left flex-gap-20" enctype="multipart/form-data" action="/predict" method="POST" >
+                    <div class="content-wrapper row-content flex-gap-10" >
+                        <input type="file" id="myFile" name="file" accept=".pdf">
+                    </div>
+
+                    <div id="submit-btn-wrapper" class="content-wrapper column-content column-center">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
