@@ -53,7 +53,6 @@ def grading(information,optional):
     elif total == 100 & len(missing_mand) != 0:
         return "Your resume is really good! However, it will be better if you include: " + ', '.join(missing_mand)
     else:
-        print(missing_mand)
         return "Your resume is perfect!"
 
 
